@@ -21,14 +21,16 @@ body {
 .contanier {
     display: flex;
     width: 1024px;
-    margin: 40px auto;
+    margin-top: 100px;
+    margin-left: 220px;
     flex-direction: row;
 }
 .card {
     background-color: var(--bright-orange);
     padding: 35px;
     height: 450px;
-    width: 350px;
+    width: 300px;
+    
 }
 .card h2 {
     color: white;
@@ -56,7 +58,12 @@ body {
     position: relative;
     top: 50px;
     font-size: 20px;
-
+    transition: all .5s ease-in;
+}
+.card a:hover {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color:#fff;
 }
 .card-2 {
     background-color: var(--Dark-cyan);
@@ -71,7 +78,7 @@ body {
     position: relative;
     top: 50px;
     font-size: 20px;
-
+    transition: all .5s ease-in;
 }
 .card-3 {
     background-color: var(--Very-dark-cyan);
@@ -84,16 +91,9 @@ body {
     padding: 10px 20px;
     text-decoration: none;
     position: relative;
-    top: 83px;
+    top: 50px;
+    transition: all .5s ease-in;
     font-size: 20px;
-}
-.attribution {
-    text-align: center;
-    margin: 20px auto;
-    width: 95%;
-}
-.attribution a {
-    text-decoration: none;
 }
 @media (max-width:480px) {
     .contanier { 

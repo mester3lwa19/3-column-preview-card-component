@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body {
+    overflow-x: hidden;
+
+}
+body {
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+:root {
+    --bright-orange:hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+}
+.contanier {
+    display: flex;
+    width: 1024px;
+    margin: 40px auto;
+    flex-direction: row;
+}
+.card {
+    background-color: var(--bright-orange);
+    padding: 35px;
+    height: 450px;
+    width: 350px;
+}
+.card h2 {
+    color: white;
+    font-family: 'Big Shoulders Display', cursive;
+    margin: 20px 0;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.card p {
+    color: white;
+    line-height: 2;
+    font-size: 17px;
+}
+
+.card-1 {
+    background-color: var(--bright-orange);
+}
+.card-1 a {
+    background-color: white;
+    color: var(--bright-orange);
+    width: 150px;
+    border-radius: 50px;
+    padding: 10px 20px;
+    text-decoration: none;
+    position: relative;
+    top: 50px;
+    font-size: 20px;
+
+}
+.card-2 {
+    background-color: var(--Dark-cyan);
+}
+.card-2 a {
+    background-color: white;
+    color: var(--Dark-cyan);
+    width: 150px;
+    border-radius: 50px;
+    padding: 10px 20px;
+    text-decoration: none;
+    position: relative;
+    top: 50px;
+    font-size: 20px;
+
+}
+.card-3 {
+    background-color: var(--Very-dark-cyan);
+}
+.card-3 a {
+    background-color: white;
+    color: var(--Very-dark-cyan);
+    width: 150px;
+    border-radius: 50px;
+    padding: 10px 20px;
+    text-decoration: none;
+    position: relative;
+    top: 83px;
+    font-size: 20px;
+}
+.attribution {
+    text-align: center;
+    margin: 20px auto;
+    width: 95%;
+}
+.attribution a {
+    text-decoration: none;
+}
+@media (max-width:480px) {
+    .contanier { 
+    flex-direction: column;
+    margin: 40px 0 0 20px;
+    }
+    .card-3 a {
+    top: 50px;
+    }
+    
+}
+@media (min-width:481px) and (max-width:1024px) {
+    .contanier {
+        flex-direction: column;
+    }
+    .card {
+        width: 700px;
+        margin-left: 30px;
+        text-align: center;
+    }
+    .card h2 {
+    font-size: 50px;
+    }
+    .card p {
+        font-size: 22px;
+    }
+}
